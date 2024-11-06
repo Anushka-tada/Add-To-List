@@ -1,0 +1,276 @@
+
+* {
+    box-sizing: border-box;
+   
+}
+
+
+.cart-image {
+    height: 120px;
+    width: 120px;
+ 
+    background-color: #f3f1ee;
+    border-radius: 50%;
+    margin-top: 10px !important
+}
+
+
+/* .main{
+    display: flex;
+    justify-content: end;
+    margin: 0% 0%;
+    gap: 100px;
+} */
+
+body {
+    background-color: #E3E7E8;
+    font-family: system-ui;
+   
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+
+}
+
+/* .section1 {
+    margin-right: 150px;
+} */
+
+.part-1 {
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 52%;
+
+}
+
+.outer-box {
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cart-icon {
+    position: relative;
+    font-size: 36px;
+}
+
+#icon:hover {
+    cursor: pointer;
+}
+
+.quantity {
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+    top: 3px;
+    left: 80%;
+    position: absolute;
+    transition: transform .2s .5s, -webkit-transform .2s .5s;
+
+}
+
+.inner-boxex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f7f8;
+    width: 213px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 1px rgb(158, 157, 157);
+
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ATC {
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 10px !important;
+}
+
+.ATC:hover {
+    cursor: pointer;
+    background-color: rgb(57, 57, 57);
+    
+}
+
+.heading {
+    font-size: 18px;
+    color: rgb(18, 17, 17);
+}
+
+.inner-boxex * {
+
+    margin: 2px;
+    padding: 2px;
+}
+
+
+/* side part */
+
+
+.side-part {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 590px;
+    width: 325px;
+
+    background-color: rgb(40, 39, 39);
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    right: -325px;
+}
+
+.side-part1 {}
+
+.side-part.open {
+    right: 0;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 0px;
+}
+
+
+.buttons-btn {
+
+    width: 160px;
+    background-color: #fff;
+    padding: 9px;
+    font-size: 13px;
+
+}
+
+#total {
+    background-color: rgb(236, 186, 49);
+    border: none;
+    font-weight: 600;
+}
+#close {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: none;
+    font-size: 18px;
+}
+
+.cart-heading {
+    font-weight: 100;
+    color: rgb(228, 174, 22);
+    font-size: 25px;
+    padding: 10px;
+}
+
+.cart-list {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+    padding: 10px;
+    background-color: rgb(93, 93, 93);
+}
+
+.cart-list-item {
+
+    list-style: none;
+    transition: 0.3s;
+    
+}
+
+
+
+
+/* after clicking on add to cart button cart items style*/
+
+.shopping1 {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid black;
+    align-items: center; */
+    /* padding-bottom: 4px; */
+    color: white;
+}
+
+.shopping1-first {
+    display: flex;
+    gap: 5px;
+}
+
+.shopping1-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.shopping1-name {}
+
+.shopping1-price {}
+
+/*quantity of items*/
+.shopping-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.fa-regular.fa-minus {
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fa-regular.fa-plus {
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
